@@ -755,6 +755,7 @@ position: relative;
 /* ------------------------grid--------------------------- */
 .design-title {
     text-align: center;
+    margin-bottom: 100px;
 }
 .grid {
 padding: 5rem;
@@ -928,9 +929,9 @@ padding: 5rem;
     filter: blur(1px);
     animation: speed infinite 1s;
 }
-.spped span:nth-child(1){
+/* .spped span:nth-child(1){
     animation-delay: 0;
-}
+} */
 .spped span:nth-child(2){
     animation-delay: .5s;
     top: 50%;

@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+:root {
+    font-size: 62.5%;
+    --primary-color: #f37321;
+    --color-green: rgba(46, 179, 0, 0.9);
+
+    --font-large: 2rem;
+    --font-regular: 1.6rem;
+}
+body {
+    font-size: var(--font-regular);
+    font-family: '맑은 고딕','Malgun Gothic','돋움',Dotum,Helvetica,AppleGothic,Sans-serif;
+    /* background: #000; */
+}
+.clear-fix:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+/* icon */
+.icon {
+    background: url(../img/icon.png);
+}
+.logo {
+    background-position: 0 -597px;
+    width: 260px;
+    height: 32px;
+    /* border: 1px solid #000; */
+}
+.btn-toggle {
+    background-position: -651px 0;
+    width: 50px;
+    height: 24px;
+    cursor: pointer;
+}
+.btn-lang {
+    background-position: -273px 0;
+    width: 32px;
+    height: 23px;
+
+}
+.search-glass:after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 10%;
+    background: url(../img/icon.png);
+    background-position: -243px 0;
+    width: 19px;
+    height: 23px;
+}
+.ir-logo {
+    background-position: -306px -457px;
+    width: 159px;
+    height: 57px;
+}
+.arrow-right {
+    background-position: -120px -100px;
+    width: 16px;
+    height: 8px;
+}
+.aroow-right-coral {
+    background-position: -400px -100px;
+    width: 32px;
+    height: 32px;
+}
+.icon-sns {
+    background: url(../img/sns/sns.png);
+}
+.btn-post {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url(../img/sns/sns.png);
+    background-position: -60px -120px;
+    width: 161px;
+    height: 45px;
+    z-index: 2;
+}
+.icon-time:before {
+    content: "";
+    display: inline-block;
+    background: url(../img/icon.png);
+    background-position: -327px -123px;
+    width: 14px;
+    height: 14px;
+    vertical-align: middle;
+}
+/* 직무특성 */
+.icon-career{
+    position: relative;
+} 
+.icon-career:before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    background: url(../img/icon.png);
+    background-position: -115px -205px;
+    width: 26px;
+    height: 29px;
+    
+}
+/* 인재상 */
+.icon-talent{
+    position: relative;
+}
+.icon-talent:before {
+    content: "";
+    position: absolute;
+    left: -40px;
+    background: url(../img/icon.png);
+    background-position: -175px -205px;
+    width: 26px;
+    height: 29px;
+}
+
+.arrow-right-small:after {
+    content: "";
+    display: inline-block;
+    background: url(../img/icon.png);
+    background-position: -231px -120px;
+    width: 6px;
+    height: 8px;
+    margin-left: 10px;
+}
+.btn-more {
+    font-weight: bold;
+}
