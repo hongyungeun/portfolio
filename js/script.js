@@ -2,17 +2,25 @@
 
 $(function(){
     /* ================= change theme ===================== */
+    var $history = $('.history-img')
+    $history.eq(1).hide();
     $('#buttonDark').click(function(){
         $(this).hide();
         $('body').addClass('dark-theme');
         $('.home').addClass('background-color')
         $('#buttonLight').show();
+        var idx = $(this).index();
+        $history.hide();
+        $history.eq(idx).show();
     })
     $('#buttonLight').click(function(){
         $('body').removeClass('dark-theme');
         $('.home').removeClass('background-color')
         $('#buttonDark').show();
         $(this).hide();
+        var idx = $(this).index();
+        $history.hide();
+        $history.eq(idx).show();
     })
 
     /* ================= navbar ===================== */
