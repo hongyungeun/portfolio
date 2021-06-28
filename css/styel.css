@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @font-face {
     font-family: 'Amsterdam';
@@ -7,9 +6,7 @@
     font-weight: normal;
     font-style: normal;
 }
-
 :root {
-    
     /* ----------------------- colors ----------------------- */
     --hue-color: #154415;
     --primary-color: var(--hue-color);
@@ -20,7 +17,6 @@
     --body-color: #FFFEF8;
     --main-color: #fbfbfe;
     --hov-color: rgb(94, 36, 117);
-
     /*------------------ typo ---------------------*/
     --body-font: 'Noto Sans KR', sans-serif;
     --main-font-size: 6rem;
@@ -30,11 +26,9 @@
     --h3-font-size: 1.4rem;
     --normal-font-size: 1.3rem;
     --small-font-size: .813rem;
-    
     /* ----------------------- font-weight ----------------------- */
     --font-medium: 500;
     --font-semi-bold: 600;
-
     /* ----------------------- margin bottom ----------------------- */
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
@@ -44,15 +38,11 @@
     --mb-2: 2rem;
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
-
     /* ----------------------- z index ----------------------- */
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
-
 }
-
-
 /* ----------------------- reset ----------------------- */
 * {
     box-sizing: border-box;
@@ -71,7 +61,6 @@ body {
     background-color: var(--body-color);
     color: var(--black-color);
 }
-
 h1,h2,h3,h4 {
     color: var(--black-color);
     font-weight: var(--font-semi-bold);
@@ -116,14 +105,12 @@ button {
     flex-wrap: wrap;
     margin: 0 -10px -20px -10px;
 }
-
 .l_col {
     box-sizing: border-box;
     width: 33.3333%;
     padding: 0 10px;
     margin-bottom: 20px;
 }
-
 /* float 버전 */
 .l_row {
 	overflow: hidden;
@@ -133,7 +120,6 @@ button {
     float: left;
     padding: 0 20px;
 }
-
 .l_col_12_12 {
     width: 100%;
 }
@@ -170,16 +156,11 @@ button {
 .l_col_1_12 {
     width: 8.33333333%;
 }
-
-/* - dash는 하위 개념을 나타낸다 */
-/* _(underbar)는 연관된 하나의 개념이다 */
 .l_col_half {
     width: 50%;
 }
-
 /* component */
 .img__wrapper {
-    /* background: dodgerblue; */
     height: 100%;
 }
 .img__wrapper img {
@@ -187,7 +168,6 @@ button {
     width: 100%;
     height: 100%;
 }
-
 @media (max-width: 768px) {
     .l_col_tablet_12_12 {
         width: 100%;
@@ -317,7 +297,6 @@ button {
     left: 0;
     width: 100%;
 }
-
 /* ----------------------- dark-theme ----------------------- */
 body.dark-theme {
     --black-color: rgb(255, 255, 255); /* 흰색으로 바뀝니다 */
@@ -418,24 +397,16 @@ body.dark-theme {
     color: var(--primary-color);
     display: none;
 }
-
 /* ========================= main ========================= */
-
 .main {
     text-align: center;
     color: var(--black-color);
     font-size: var(--main-font-size);
     height: 3000px;
     position: relative;
-    /* display: none; */
 }
 .main-container {
     padding-top: 300px;
-    /* position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-     */
 }
 .main-fixed {
     position: fixed;
@@ -456,14 +427,11 @@ body.dark-theme {
 }
 .main-box {
     width: 300px;
-    height: 2px;
-    border: 1px solid #000;
+    height: 0px;
+    /* border: 1px solid #000; */
     margin: 0 auto;
     display: inline-block;
 }
-
-
-
 /* ========================home========================= */
 .home {
     text-align-last: left;
@@ -475,7 +443,6 @@ body.dark-theme {
 .section__title--wrap {
     margin-top: 100px;
 }
-
 .section__title {
     margin-bottom: var(--mb-1);
 }
@@ -494,11 +461,9 @@ body.dark-theme {
     margin: 30px 0;
     color: var(--primary-color);
 }
-
 .section__title__intro p {
     margin-bottom: var(--mb-0-5);
 }
-
 .section__title__intro__second {
     max-width: 800px;
     text-align-last: center;
@@ -513,7 +478,6 @@ body.dark-theme {
     align-items: center;
     width: 45%;
     margin: 30px 0;
-    
 }
 .home__info {
     display: flex;
@@ -527,18 +491,11 @@ body.dark-theme {
 .intro-img {
     width: 300px;
 }
-
 .download {
     text-align: center;
     margin-top: 50px;
 }
-
-
 /* --------------- about ----------------- */
-
-.about{
-
-}
 .about__wrap {
     margin-top: 50px;
 }
@@ -548,21 +505,18 @@ body.dark-theme {
 }
 .profile-img img {
     width: 200px;
-    
 }
 
 /* -----------------history--------------- */
 .history-img {
     display: inline-block;
     margin-left: 365px;
-    
 }
 .history-img p {
     margin-top: 50px;
 }
 .history-img img {
     width: 600px;
-    
 }
 .history__img__desc1,
 .history__img__desc2,
@@ -588,7 +542,6 @@ body.dark-theme {
 .skills {
     max-width: 800px;
     margin-top:100px;
-    
 }
 .skills__list {
     display: flex;
@@ -636,11 +589,9 @@ body.dark-theme {
 .skill__titles h3 {
     font-weight: var(--small-font-size);
 }
-
 .skill__data {
     display: none;
 }
-
 .skill__bar {
     height: 8px;
     border-radius: .5rem;
@@ -671,23 +622,22 @@ body.dark-theme {
     height: 100%;
     background: var(--primary-color);
 }
-
 /* ------------------------slider------------------------ */
 .slide__banner {
 text-align: center;
 position: relative;
-
 }
-.slide__banner h1 {
+.pup-title {
     margin-bottom: var(--mb-1-5);
 }
-.fade {
-
+.pub-desc {
+    margin-bottom: var(--mb-1-5);
+    font-size: 14px;
+    color: #999;
 }
 .fade img {
     max-width: 100%;
     padding: 2rem;
-
 }
 .slick-prev,
 .slick-next {
@@ -703,7 +653,6 @@ position: relative;
     border: none;
     background: transparent;
     cursor: pointer
-    
 }
 .slick-prev:after,
 .slick-next:after{
@@ -715,7 +664,6 @@ position: relative;
     left: 0;
     transform: translate(-50%);
     z-index: 10;
-
 }
 .slick-prev:after {
     content: '\ec49';
@@ -727,7 +675,6 @@ position: relative;
 .slick-next:after {
     content: '\eb9f';
 }
-
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -741,7 +688,6 @@ position: relative;
 /* 나머지 dot */
 .slick-dots li {
     margin-right: .5rem;
-    
 }
 .slick-dots li button {
     background: #666;
@@ -753,9 +699,13 @@ position: relative;
     cursor: pointer;
 }
 /* ------------------------grid--------------------------- */
-.design-title {
+.design-title-wrap {
     text-align: center;
     margin-bottom: 100px;
+}
+.design-title-wrap p {
+    font-size: 14px;
+    color: #999;
 }
 .grid {
 padding: 5rem;
@@ -766,9 +716,6 @@ padding: 5rem;
 .grid img {
     cursor: pointer;
     width: 100%;
-}
-.grid-wrap {
-
 }
 .grid-item {
     max-width: 25%;
@@ -808,9 +755,7 @@ padding: 5rem;
     z-index: var(--z-modal);
     background: rgba(0,0,0,0.2);
     display: none;
-    
 }
-
 .modal__close {
     position: fixed;
     top: 5%;
@@ -849,9 +794,7 @@ padding: 5rem;
     color: var(--gray-color);
     white-space: nowrap;
 }
-
 /* bike */
-
 .bike-ride {
     position: relative;
 }
@@ -916,7 +859,6 @@ padding: 5rem;
     right: 5px;
     bottom: -9px;
 }
-
 .spped span{
     position: absolute;
     width: 60px;
@@ -929,9 +871,6 @@ padding: 5rem;
     filter: blur(1px);
     animation: speed infinite 1s;
 }
-/* .spped span:nth-child(1){
-    animation-delay: 0;
-} */
 .spped span:nth-child(2){
     animation-delay: .5s;
     top: 50%;
@@ -949,7 +888,6 @@ padding: 5rem;
     100% {
         transform: rotate(-360deg);
     }
-    
 }
 @keyframes speed {
     0% {
@@ -992,15 +930,10 @@ padding: 5rem;
     .main-title {
         display: block;
     }
-    .main-container .main-box{
-        
-        
-    }
     .section__title__intro__second {
         display: block;
         float: none;
         margin: 0 auto;
-        
     }
     .home__img__box {
         display: block;
@@ -1012,8 +945,6 @@ padding: 5rem;
 }
 /* ========================= Tablet ========================= */
 @media (max-width: 768px){
-
-
     :root {
         --h1-font-size: 1.5rem;
         --h2-font-size: 1.25rem;
@@ -1061,10 +992,8 @@ padding: 5rem;
         max-width: 70%;
     }
 }
-
 /* ========================= Mobile ========================= */
 @media (max-width: 568px){
-
     /* ====================== Skills ===================== */
     .skills__list {
         flex-direction: column;
@@ -1073,7 +1002,5 @@ padding: 5rem;
     }
     .skills__item {
         width: auto;
-        
     }
-
 }
