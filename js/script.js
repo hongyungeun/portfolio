@@ -103,14 +103,29 @@ $(function(){
     .addTo(controller)
     
 
-    var title = TweenMax.to('.main-title', 1,{
+    var title = TweenMax.to('.main-title1', 1,{
+        rotation: -360,
         autoAlpha: 0,/* opcity */
         
     })
     var scene2 = new ScrollMagic.Scene({
         triggerElement: '.main',
         triggerHook: 0,
-        offset: 200,
+        offset: 0,
+        duration: "100%"
+    })
+    .setTween(title)
+    .addTo(controller)
+
+    var title = TweenMax.to('.main-title2', 1,{
+        rotation: 360,
+        autoAlpha: 0,/* opcity */
+        
+    })
+    var scene2 = new ScrollMagic.Scene({
+        triggerElement: '.main',
+        triggerHook: 0,
+        offset: 0,
         duration: "100%"
     })
     .setTween(title)
@@ -124,7 +139,7 @@ $(function(){
         triggerElement: '.main',
         triggerHook: 0,
         offset: 600,
-        duration: "150%"
+        duration: "200%"
     })
     .setTween(subTitle)
     .addTo(controller)
@@ -136,11 +151,12 @@ $(function(){
     var scene3 = new ScrollMagic.Scene({
         triggerElement: '.main',
         triggerHook: 0,
-        offset: 600,
-        duration: "240%"
+        offset: 400,
+        duration: "300%"
     })
     .setTween(subTitle)
     .addTo(controller)
+    
     
     /* ==================slick=================== */
     $('.fade').slick({

@@ -1,10 +1,9 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
 @font-face {
-    font-family: 'Amsterdam';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/naverfont_01@1.0/Amsterdam.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    src: url(/font/AppleSDGothicNeoM.ttf);
+    src: url(/font/AppleSDGothicNeoB.ttf);
 }
 :root {
     /* ----------------------- colors ----------------------- */
@@ -14,11 +13,11 @@
     --black-color: #222;
     --gray-color: #999;
     --white-color: #FFF;
-    --body-color: #FFFEF8;
+    --body-color: #f7f7f7;
     --main-color: #fbfbfe;
     --hov-color: rgb(94, 36, 117);
     /*------------------ typo ---------------------*/
-    --body-font: 'Noto Sans KR', sans-serif;
+    --body-font: '-apple-system', sans-serif;
     --main-font-size: 6rem;
     --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
@@ -289,7 +288,7 @@ button {
     display: block;
 }
 .main-bg {
-    background: var(--main-color);
+    background: var(--white-color);
 }
 .position-fixed {
     position: fixed;
@@ -416,14 +415,18 @@ body.dark-theme {
 }
 .main-title {
     vertical-align: top;
-    margin-top: 50px;
+    margin-top: -50px;
     display: inline-block;
+    
+}
+.main-title2 {
+    margin-left: -150px;
 }
 .main-sub-title {
     font-size: var(--main-font-size);
     font-family: var(--body-font);
     opacity: 0;
-    margin-top: -100px;
+    margin-top: -200px;
 }
 .main-box {
     width: 300px;
@@ -499,6 +502,17 @@ body.dark-theme {
 .about__wrap {
     margin-top: 50px;
 }
+.about-desc {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about p {
+    font-size: 18px;
+    margin-bottom: var(--mb-1);
+    
+}
 .profile-img {
     display: inline-block;
     vertical-align: top;
@@ -510,7 +524,8 @@ body.dark-theme {
 /* -----------------history--------------- */
 .history-img {
     display: inline-block;
-    margin-left: 365px;
+    margin-left: 100px;
+    vertical-align: top;
 }
 .history-img p {
     margin-top: 50px;
@@ -743,7 +758,8 @@ padding: 5rem;
     border: 1px solid #000;
 }
 .grid-modal-btn:hover img{
-    transform: scale(1.1);
+    transform: scale(1.08);
+    box-shadow: 0 0 5px #666;
 }
 /* ----------modal--------- */
 .modal {
