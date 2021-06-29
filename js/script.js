@@ -157,9 +157,6 @@ $(function(){
     .setTween(subTitle)
     .addTo(controller)
     
-
-    
-
     
     /* ==================slick=================== */
     $('.fade').slick({

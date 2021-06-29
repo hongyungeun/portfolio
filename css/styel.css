@@ -15,7 +15,7 @@
     --black-color: #222;
     --gray-color: #999;
     --white-color: #FFF;
-    --body-color: #f7f7f7;
+    --body-color: #fbfbfe;
     --main-color: #fbfbfe;
     --hov-color: rgb(94, 36, 117);
     /*------------------ typo ---------------------*/
@@ -503,6 +503,7 @@ body.dark-theme {
 .about__wrap {
     margin-top: 50px;
 }
+
 .about-desc {
     display: inline-block;
     margin-left: 40px;
@@ -523,6 +524,7 @@ body.dark-theme {
 }
 .profile-img img {
     width: 200px;
+    
 }
 
 /* -----------------history--------------- */
@@ -1030,5 +1032,8 @@ padding: 5rem;
     }
     .skills__item {
         width: auto;
+    }
+    .about-desc {
+        margin-left: 0;
     }
 }
