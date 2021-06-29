@@ -5,6 +5,8 @@
     src: url(/font/AppleSDGothicNeoM.ttf);
     src: url(/font/AppleSDGothicNeoB.ttf);
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 :root {
     /* ----------------------- colors ----------------------- */
     --hue-color: #154415;
@@ -17,7 +19,7 @@
     --main-color: #fbfbfe;
     --hov-color: rgb(94, 36, 117);
     /*------------------ typo ---------------------*/
-    --body-font: '-apple-system', sans-serif;
+    --body-font: 'Roboto'/* '-apple-system' */, sans-serif;
     --main-font-size: 6rem;
     --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
@@ -469,7 +471,6 @@ body.dark-theme {
 }
 .section__title__intro__second {
     max-width: 800px;
-    text-align-last: center;
     position: relative;
     vertical-align: top;
     float: left;
@@ -504,9 +505,12 @@ body.dark-theme {
 }
 .about-desc {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.about-desc h2 {
+    margin-bottom: 20px;
 }
 .about p {
     font-size: 18px;
@@ -636,6 +640,14 @@ body.dark-theme {
     width: 50%;
     height: 100%;
     background: var(--primary-color);
+}
+.skill-desc {
+    text-align: left;
+    margin-top: 30px;
+
+}
+.skill-desc p {
+    margin-bottom: 35px;
 }
 /* ------------------------slider------------------------ */
 .slide__banner {
@@ -974,7 +986,7 @@ padding: 5rem;
         padding: 2rem 2rem;
     }
     .section__title__intro__second{
-        text-align: center;
+        
     }
     .about__wrap {
         text-align: center;

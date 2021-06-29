@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- css -->
 <link rel="stylesheet" href="./css/styel.css">
+<link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <!-- icon : unicons, xeicon, font awesome -->
@@ -13,6 +16,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 <!-- js -->
 <script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <!-- scroll magic -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
@@ -196,13 +200,17 @@
                                         </span>
                                     </div>
                                 </li>
-                                
                             </ul>
                         </li>
                     </ul>
                 </section>
+                <div class="skill-desc wow animate__animated animate__fadeInLeft">
+                    <p>- <b>웹 표준</b>을 준수 하려고 항상 최선을 다합니다</p>
+                    <p>- 같이 일하는 사람들과<b>협업</b>하기 위해 노력 합니다 </p>
+                    <p>- <b>디자인</b>을 할때 열린 자세로 임합니다</p>
                 </div>
-                <div class="home__img__box">
+                </div>
+                <div class="home__img__box wow animate__animated animate__fadeInRight" data-wow-delay="1s">
                     <img src="./img/메인사진.jpg" alt="" class="intro-img">
                 </div>
             
@@ -217,6 +225,7 @@
                     <img src="./img/honyungeun.jpg" alt="" class="pofile-photo">
                 </div>
                 <div class="about-desc">
+                    <h2>Profile</h2>
                     <p><b>Name :</b> 홍윤근</p>
                     <p><b>Birth :</b> 1994.02.19</p>
                     <p><b>Mobile :</b> 010-2407-3368</p>
@@ -363,5 +372,8 @@
         <br>
         <p class="contact-desc">copyright 2021. hongyungeun rights reserved.</p>
     </section> -->
+    <script>
+        new WOW().init();
+        </script>
 </body>
 </html> 
