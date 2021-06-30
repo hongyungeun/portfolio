@@ -985,6 +985,10 @@ padding: 5rem;
         --normal-font-size: .938rem;
         --small-font-size: .75rem;
     }
+    .main-title img{
+        width: 200px;
+        vertical-align: top;
+    }
     .inner {
         padding: 2rem 2rem;
     }
@@ -1025,6 +1029,7 @@ padding: 5rem;
 }
 /* ========================= Mobile ========================= */
 @media (max-width: 568px){
+    
     /* ====================== Skills ===================== */
     .skills__list {
         flex-direction: column;
