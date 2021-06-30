@@ -745,6 +745,7 @@ padding: 5rem;
 .grid img {
     cursor: pointer;
     width: 100%;
+    border-radius: 10px;
 }
 .grid-item {
     max-width: 25%;
